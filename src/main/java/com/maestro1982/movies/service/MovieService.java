@@ -18,7 +18,7 @@ public class MovieService {
     }
 
     // Use keyword Optional because it can return null if it doesn't find the id
-    public Optional<Movie> singleMovie(String imdbId) {
+    public Optional<Movie> findMovieByImdbId(String imdbId) {
         return movieRepository.findMovieByImdbId(imdbId);
     }
 }
